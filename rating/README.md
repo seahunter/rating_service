@@ -8,7 +8,7 @@ Hi, everyone. This is my test Rating Service on Laravel.
     4) DB_USERNAME=root
     5) DB_PASSWORD=root
 
-Edit this data in /config/database.php
+Edit this data in .env
 2) Run command: composer install
 3) You may run a laravel migration, inside a project dir run command: php artisan migrate
 4) Start a local webserver: php artisan serve
