@@ -2,23 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\Post;
 use App\Models\Rating;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class RatingSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        Post::factory()
-            ->count(10)
-            ->create();
         Rating::factory()
             ->count(50)
             ->create();
