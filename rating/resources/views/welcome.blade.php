@@ -396,10 +396,10 @@
 
 </head>
 <body class="antialiased">
-@if(! $posts->isEmpty())
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            @if(! $posts->isEmpty())
                 <table class="table table-dark">
                     <thead>
                     <tr>
@@ -418,9 +418,11 @@
                     @endforeach
                     </tbody>
                 </table>
-            </div>
+            @else
+                <h2>There are no posts with rating. Please add some one from your website</h2>
+            @endif
         </div>
     </div>
-@endif
+</div>
 </body>
 </html>
